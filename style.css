@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&family=Exo+2:wght@300&family=Poppins:wght@100;300;400;500;600&family=Roboto:wght@300&family=Rubik:wght@300&family=Slabo+27px&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background: url("../snake.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+    background: linear-gradient(rgb(170, 228, 170),rgb(241, 241, 172));
+    width: 90vmin;
+    height: 90vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(25,1fr);
+    grid-template-columns: repeat(25,1fr);
+
+}
+.head{
+    background-color: red;
+    border: 2px solid purple;
+    transform: scale(1.02);
+    border-radius: 9px;
+
+}
+.snake{
+    background-color:purple;
+    border: .25vmin solid white;
+    border-radius: 8px;
+   
+}
+.food{
+    background-color:rgb(30, 129, 162);
+    border: .25vmin solid black;
+    border-radius: 8px;
+    
+}
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right:150px ;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+#hiscoreBox{
+    position: absolute;
+    top: 50px;
+    right:150px ;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
